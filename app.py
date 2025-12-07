@@ -3,7 +3,7 @@ import fitz
 from groq import Groq
 
 # ← ВСТАВЬ СВОЙ КЛЮЧ СЮДА ↓↓↓
-client = Groq(api_key="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")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 SYSTEM_PROMPT = """
 You are a cover letter template generator bot. Your only task is to generate a clean English cover letter template based on the user's resume.
